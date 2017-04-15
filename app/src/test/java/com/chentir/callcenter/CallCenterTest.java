@@ -55,7 +55,7 @@ public class CallCenterTest {
         /**
          * Initially all employees are available
          */
-        assertFalse(manager.isAvailable());
+        assertTrue(manager.isAvailable());
         assertTrue(director.isAvailable());
         respondentList.stream().forEach(r -> assertTrue(r.isAvailable()));
     }
